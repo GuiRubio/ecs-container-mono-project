@@ -1,13 +1,13 @@
 REGION=$1
 STACK_NAME=$2
 
-DEPLOYABLE_SERVICES=(api);
+DEPLOYABLE_SERVICES=(api)
 
 PRIMARY='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Fetch the stack metadata for use later
-printf "${PRIMARY}* Fetching current stack state${NC}\n";
+printf "${PRIMARY}* Fetching current stack state${NC}\n"
 
 QUERY=$(cat <<-EOF
 [
